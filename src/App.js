@@ -6,17 +6,21 @@ import HomeComponent from './Containers/Home';
 import FaqsComponent from './Containers/Faqs';
 import NotFoundComponent from './Containers/NotFoundPage';
 import FeedbackComponent from './Containers/Feedback';
+import Header from './Components/Header';
 
 const NAVBAR = [
   {
     navName: 'Home Page',
     navLink: '/',
+    navKey: 1
   }, {
     navName: 'Faqs',
     navLink: '/faqs',
+    navKey: 2
   }, {
     navName: 'Feedback',
     navLink: '/feedback',
+    navKey: 3
   }
 ];
 
@@ -24,6 +28,9 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
+      <Header
+        navItems={ NAVBAR }
+      />
          <Switch>
           <Route exact path='/' component={ HomeComponent } />
           <Route path='/home' component={ HomeComponent } />
