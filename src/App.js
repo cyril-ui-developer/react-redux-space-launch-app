@@ -7,6 +7,7 @@ import FaqsComponent from './Containers/Faqs';
 import NotFoundComponent from './Containers/NotFoundPage';
 import FeedbackComponent from './Containers/Feedback';
 import Header from './Components/Header';
+import LaunchesComponent from './Containers/Launches';
 
 const NAVBAR = [
   {
@@ -34,6 +35,7 @@ class App extends Component {
          <Switch>
           <Route exact path='/' component={ HomeComponent } />
           <Route path='/home' component={ HomeComponent } />
+          <Route path='/launches' component={ LaunchesComponent } />
           <Route path='/faqs' component={ FaqsComponent } />
           <Route path='/feedback' component={ FeedbackComponent } />
           <Route path='*' component={ NotFoundComponent } />

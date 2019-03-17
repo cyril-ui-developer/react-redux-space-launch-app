@@ -12,7 +12,7 @@ class Header extends Component {
 
   render() {
     const { navItems } = this.props;
-    console.log(this.props)
+
     return (
       <header className='toolbar-wrapper'>
         <nav className='toolbar-navigation'>
