@@ -24,11 +24,15 @@ const NAVBAR = [
     navKey: 3
   }
 ];
-
+const test = ()=>{
+  console.log('test')
+}
 class App extends Component {
   render() {
+   
     return (
       <div className="app-container">
+  
       <Header
         navItems={ NAVBAR }
       />
