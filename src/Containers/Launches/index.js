@@ -34,7 +34,7 @@ class Launches extends Component {
 
   render() {
     const { launchesDataSet } = this.props.reducerData ;
-   console.log(this.props)
+  // console.log(this.props)
     return (
       <div className='homepage-wrapper'>
   <table>
